@@ -5,5 +5,8 @@
 /build
 /dist
 
+# Turbo
+.turbo
+
 # Other
 .DS_Store
