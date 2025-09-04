@@ -1,0 +1,6 @@
+
+
+> @starter-kit/auth@0.0.0 lint
+> eslint . --max-warnings 0
+
+[1G[0K[1G[0K\[1G[0K

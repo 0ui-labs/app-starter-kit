@@ -3,13 +3,34 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@/ui": ["../../packages/ui"],
-      "@/db": ["../../packages/db"],
-      "@/auth": ["../../packages/auth"],
-      "@/api": ["../../packages/api"],
-      "@/ai-adapter": ["../../packages/ai-adapter"],
-      "@/agentic-workflows": ["../../packages/agentic-workflows"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@/ui": [
+        "../../packages/ui"
+      ],
+      "@/db": [
+        "../../packages/db"
+      ],
+      "@/auth": [
+        "../../packages/auth"
+      ],
+      "@/api": [
+        "../../packages/api"
+      ],
+      "@/ai-adapter": [
+        "../../packages/ai-adapter"
+      ],
+      "@/agentic-workflows": [
+        "../../packages/agentic-workflows"
+      ]
     }
-  }
+  },
+  "include": [
+    "../../next-env.d.ts",
+    "../../**/*.ts",
+    "../../**/*.tsx",
+    "../../.next/types/**/*.ts",
+    ".next/types/**/*.ts"
+  ]
 }

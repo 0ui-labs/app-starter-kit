@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "@/ui";
 
 export default function Home() {
   return (
@@ -49,6 +50,10 @@ export default function Home() {
           >
             Read our docs
           </a>
+        </div>
+
+        <div className="mt-8">
+          <Button>Hello from the UI package!</Button>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">

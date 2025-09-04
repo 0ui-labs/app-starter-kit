@@ -1,16 +1,26 @@
 {
   "name": "app-starter-kit",
   "private": true,
+  "packageManager": "npm@11.1.0",
   "scripts": {
     "dev": "turbo run dev",
-    "setup": "if [ ! -f .env ]; then cp .env.example .env && echo 'Created .env file. Please fill in your API keys.'; fi && npx prisma migrate dev --name init"
+    "setup": "if [ ! -f .env ]; then cp .env.example .env && echo 'Created .env file. Please fill in your API keys.'; fi && npx prisma migrate dev --name init",
+    "test": "vitest run",
+    "lint": "turbo run lint",
+    "build": "turbo run build"
   },
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "devDependencies": {
-    "turbo": "^2.0.4"
+    "@testing-library/jest-dom": "^6.4.8",
+    "@vitejs/plugin-react": "^4.3.1",
+    "jsdom": "^24.1.0",
+    "turbo": "^2.0.4",
+    "vitest": "^2.0.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.15.0"
   }
 }
-
