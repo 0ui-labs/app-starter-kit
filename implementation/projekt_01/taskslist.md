@@ -3,7 +3,7 @@
 
 ## Phase 1: Fundament stabilisieren
 
-- [ ] **1. `db`-Paket initialisieren:** Ein `User`-Modell hinzufügen und den Prisma-Client exportieren.
+- [x] **1. `db`-Paket initialisieren:** Ein `User`-Modell hinzufügen und den Prisma-Client exportieren. ✅ (2025-09-04)
 - [ ] **2. `ui`-Paket mit einer Komponente füllen:** Eine `Button.tsx` erstellen und exportieren.
 - [ ] **3. `api`-Paket zum Leben erwecken:** Eine `healthCheck`-Prozedur definieren.
 - [ ] **4. Restliche Pakete stubben:** Leere `index.ts`-Dateien in `auth`, `ai-adapter`, und `agentic-workflows` erstellen.
