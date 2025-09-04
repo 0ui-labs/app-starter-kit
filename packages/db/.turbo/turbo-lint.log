@@ -1,7 +1,0 @@
-
-
-> @starter-kit/db@0.0.0 lint
-> eslint . --max-warnings 0
-
-[1G[0KPages directory cannot be found at /Users/philippbriese/app-starter-kit/packages/db/pages or /Users/philippbriese/app-starter-kit/packages/db/src/pages. If using a custom path, please configure with the `no-html-link-for-pages` rule in your eslint config file.
-[1G[0K\[1G[0K
