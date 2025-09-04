@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/ui": ["../../packages/ui"],
+      "@/db": ["../../packages/db"],
+      "@/auth": ["../../packages/auth"],
+      "@/api": ["../../packages/api"],
+      "@/ai-adapter": ["../../packages/ai-adapter"],
+      "@/agentic-workflows": ["../../packages/agentic-workflows"]
+    }
+  }
+}

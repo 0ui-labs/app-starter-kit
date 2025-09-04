@@ -1,0 +1,15 @@
+{
+  "name": "@starter-kit/db",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "lint": "eslint . --max-warnings 0"
+  },
+  "devDependencies": {
+    "eslint-config-next": "^14.0.0",
+    "prisma": "^6.15.0",
+    "typescript": "^5.3.0"
+  }
+}

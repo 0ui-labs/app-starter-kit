@@ -1,0 +1,16 @@
+{
+  "name": "app-starter-kit",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "setup": "if [ ! -f .env ]; then cp .env.example .env && echo 'Created .env file. Please fill in your API keys.'; fi && npx prisma migrate dev --name init"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.0.4"
+  }
+}
+
