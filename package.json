@@ -7,7 +7,8 @@
     "setup": "if [ ! -f .env ]; then cp .env.example .env && echo 'Created .env file. Please fill in your API keys.'; fi && npx prisma migrate dev --name init",
     "test": "vitest run",
     "lint": "turbo run lint",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "prepare": "husky"
   },
   "workspaces": [
     "apps/*",
@@ -16,11 +17,19 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.8",
     "@vitejs/plugin-react": "^4.3.1",
+    "husky": "^9.1.7",
     "jsdom": "^24.1.0",
+    "lint-staged": "^16.1.6",
     "turbo": "^2.0.4",
     "vitest": "^2.0.1"
   },
   "dependencies": {
     "@prisma/client": "^6.15.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "vitest related --run"
+    ]
   }
 }
