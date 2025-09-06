@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+**CodeRabbit Integration**: This project uses CodeRabbit for automated code reviews.
+
 First, run the development server:
 
 ```bash
