@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-**CodeRabbit Integration**: This project uses CodeRabbit for automated code reviews.
+**CodeRabbit Integration**: This project uses [CodeRabbit](https://www.coderabbit.ai) for automated code reviews. Reviews run automatically on pull requests; results appear in PR comments and under the "Checks" tab.
 
 First, run the development server:
 
