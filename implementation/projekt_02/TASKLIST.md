@@ -93,7 +93,12 @@
 - [ ] 09.06 UI Component Tests
 - [ ] 09.07 API Integration Tests
 - [ ] 09.08 E2E Setup
-- [ ] 09.09 E2E Tests
+- [ ] **09.09 E2E Tests [AUFGETEILT]**
+  - [ ] 09.09.1 Homepage & Public Pages (09.09.1-e2e-homepage-and-public-pages.md)
+  - [ ] 09.09.2 Authentication Flow (09.09.2-e2e-authentication-flow.md)
+  - [ ] 09.09.3 Dashboard & Navigation (09.09.3-e2e-dashboard-and-navigation.md)
+  - [ ] 09.09.4 Posts CRUD Flow (09.09.4-e2e-posts-crud-flow.md)
+  - [ ] 09.09.5 Accessibility Audit (09.09.5-e2e-accessibility-audit.md)
 - [ ] 09.10 Test Scripts
 - [ ] 09.11 Verifizierung
 - [ ] 09.12 CI/CD Pipeline einrichten
@@ -131,7 +136,12 @@
 - [ ] 12.08 Usage Examples
 - [ ] 12.09 Testing & Verification
 - [ ] 12.10 Error Handling Patterns
-- [ ] 12.11 Performance Optimization
+- [ ] **12.11 Performance Optimization [AUFGETEILT]**
+  - [ ] 12.11.1 Connection Pooling (12.11.1-connection-pooling.md)
+  - [ ] 12.11.2 Response Caching (12.11.2-response-caching.md)
+  - [ ] 12.11.3 Token Optimization (12.11.3-token-optimization.md)
+  - [ ] 12.11.4 Streaming Optimization (12.11.4-streaming-optimization.md)
+  - [ ] 12.11.5 Memory Management (12.11.5-memory-management.md)
 - [ ] 12.12 Integration & Rollback
 
 ### Task 13: Agentic Workflows (13-workflows.md)
@@ -147,7 +157,11 @@
 ## Phase 4: Production Readiness 🚀
 ### Task 14: Logging & Monitoring (14-logging.md)
 - [ ] 14.01 Pino Logger Setup
-- [ ] 14.02 Sentry Next.js 15 Integration
+- [ ] **14.02 Sentry Next.js 15 Integration [AUFGETEILT]**
+  - [ ] 14.02.1 Sentry Base Setup (14.02.1-sentry-base-setup.md)
+  - [ ] 14.02.2 Performance Monitoring (14.02.2-sentry-performance-monitoring.md)
+  - [ ] 14.02.3 Session Replay (14.02.3-sentry-session-replay.md)
+  - [ ] 14.02.4 User Feedback (14.02.4-sentry-user-feedback.md)
 - [ ] 14.03 Prometheus Metrics
 - [ ] 14.04 Health Checks
 - [ ] 14.05 Prisma Logging Integration
@@ -190,19 +204,19 @@
 - **Task 8**: ⏳ **BEREIT** (0/10 Subtasks)
 
 ### Phase 3: Package Implementations 📦
-- **Task 9**: ⏳ **BEREIT** (0/14 Subtasks)
+- **Task 9**: ⏳ **BEREIT** (0/18 Subtasks) *[09.09 aufgeteilt in 5 Subtasks]*
 - **Task 10**: ⏳ **BEREIT** (0/8 Subtasks)
 - **Task 11**: ⏳ **BEREIT** (0/8 Subtasks)
-- **Task 12**: ⏳ **BEREIT** (0/12 Subtasks)
+- **Task 12**: ⏳ **BEREIT** (0/16 Subtasks) *[12.11 aufgeteilt in 5 Subtasks]*
 - **Task 13**: ⏳ **BEREIT** (0/8 Subtasks)
 
 ### Phase 4: Production Readiness 🚀
-- **Task 14**: ⏳ **BEREIT** (0/8 Subtasks)
+- **Task 14**: ⏳ **BEREIT** (0/11 Subtasks) *[14.02 aufgeteilt in 4 Subtasks]*
 - **Task 15**: ⏳ **BEREIT** (0/10 Subtasks)
 - **Task 16**: ⏳ **BEREIT** (0/6 Subtasks)
 
 ## Statistiken
-- **Gesamt**: 0/16 Tasks **Vollständig Abgeschlossen** | 2/16 Tasks **Teilweise** | **151 Subtasks** verbleibend
+- **Gesamt**: 0/16 Tasks **Vollständig Abgeschlossen** | 2/16 Tasks **Teilweise** | **165 Subtasks** verbleibend (davon 14 neue durch Aufteilung)
 - **Aktueller Fokus**: Task 2 - PrismaClient Singleton (fehlt noch)
 - **Nächste Priorität**: Phase 1 - Foundation abschließen vor Phase 2
 
@@ -237,10 +251,25 @@ graph TD
 ## Geschätzte Zeiten
 - **Phase 1**: ~6 Stunden (2 Tasks ✅ abgeschlossen + Task 3)
 - **Phase 2**: ~15 Stunden (5 Tasks)
-- **Phase 3**: ~18 Stunden (5 Tasks)
-- **Phase 4**: ~12 Stunden (3 Tasks)
-- **Gesamt**: ~51 Stunden für vollständige Implementierung
+- **Phase 3**: ~22 Stunden (5 Tasks) *[+4h durch detailliertere Subtasks]*
+  - Task 9: +2h durch aufgeteilte E2E Tests
+  - Task 12: +2h durch aufgeteilte Performance Optimierung
+- **Phase 4**: ~14 Stunden (3 Tasks) *[+2h durch detailliertere Sentry Integration]*
+- **Gesamt**: ~57 Stunden für vollständige Implementierung
+
+## Hinweise zu aufgeteilten Tasks
+
+### Vorteile der Aufteilung:
+- **Parallelisierung**: Aufgeteilte Subtasks können von verschiedenen Entwicklern parallel bearbeitet werden
+- **Bessere Testbarkeit**: Jeder Subtask kann isoliert getestet werden
+- **Klarere Fokussierung**: Entwickler können sich auf spezifische Bereiche konzentrieren
+- **Reduziertes Risiko**: Fehler in einem Subtask blockieren nicht andere
+
+### Aufgeteilte Tasks:
+1. **09.09 E2E Tests**: 5 spezialisierte Test-Suites (Homepage, Auth, Dashboard, CRUD, Accessibility)
+2. **12.11 Performance Optimization**: 5 Optimierungsbereiche (Connection Pooling, Caching, Token, Streaming, Memory)
+3. **14.02 Sentry Integration**: 4 Feature-Module (Base Setup, Performance, Replay, Feedback)
 
 ---
 *Letzte Aktualisierung: 09.01.2025*
-*Status: Basis-Implementierungen vorhanden | Detaillierte Subtask-Struktur aus projekt_02 noch umzusetzen | Testing-Setup erweitert mit CI/CD, Pre-Commit Hooks und E2E-Seeding*
+*Status: Basis-Implementierungen vorhanden | Detaillierte Subtask-Struktur erweitert mit aufgeteilten komplexen Tasks | Testing-Setup erweitert mit CI/CD, Pre-Commit Hooks und E2E-Seeding*
